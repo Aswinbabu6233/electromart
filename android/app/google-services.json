@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982037833299",
+    "project_id": "electromart-20b9f",
+    "storage_bucket": "electromart-20b9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982037833299:android:dcd4203f398d5e9ee788a6",
+        "android_client_info": {
+          "package_name": "com.example.electromart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf2gZu5GxMW29x4f019CXhjv3SAOAJAKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
