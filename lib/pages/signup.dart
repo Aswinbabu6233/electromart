@@ -1,3 +1,5 @@
+import 'package:electromart/Services/Database.dart';
+import 'package:electromart/Services/Shared_prefr.dart';
 import 'package:electromart/pages/bottomnav.dart';
 import 'package:electromart/pages/loginpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -60,12 +62,18 @@ class _SignupState extends State<Signup> {
                     fontSize: 20,
                     color: Colors.black))));
         String ID = randomAlphaNumeric(10);
-        Map<String, dynamic> Userinfomap = {
+        await SharedpreferenceHelper().SaveUserID(ID);
+        await SharedpreferenceHelper().SaveUserName(_name.text);
+        await SharedpreferenceHelper().SaveUserEmail(_email.text);
+        await SharedpreferenceHelper()
+            .SaveUserImage("images/demoprofile-removebg.png");
+        Map<String, dynamic> Userinfo = {
           "name": _name.text,
           "email": _email.text,
           "id": ID,
           "image": "images/demoprofile-removebg.png"
         };
+        await DatabaseMethods().adduserDetails(Userinfo, ID);
         Navigator.push(
             context,
             MaterialPageRoute(

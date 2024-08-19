@@ -1,3 +1,4 @@
+import 'package:electromart/Admin/admin.dart';
 import 'package:electromart/pages/bottomnav.dart';
 import 'package:electromart/pages/loginpage.dart';
 import 'package:electromart/pages/signup.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Loginpage(),
+      home: Admin(),
     );
   }
 }
