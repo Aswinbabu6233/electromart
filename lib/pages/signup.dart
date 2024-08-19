@@ -3,6 +3,7 @@ import 'package:electromart/pages/loginpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:random_string/random_string.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -58,6 +59,13 @@ class _SignupState extends State<Signup> {
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     color: Colors.black))));
+        String ID = randomAlphaNumeric(10);
+        Map<String, dynamic> Userinfomap = {
+          "name": _name.text,
+          "email": _email.text,
+          "id": ID,
+          "image": "images/demoprofile-removebg.png"
+        };
         Navigator.push(
             context,
             MaterialPageRoute(
