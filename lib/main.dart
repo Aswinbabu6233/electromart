@@ -1,5 +1,7 @@
+import 'package:electromart/Admin/addProduct.dart';
 import 'package:electromart/Admin/admin.dart';
 import 'package:electromart/pages/bottomnav.dart';
+import 'package:electromart/pages/home.dart';
 import 'package:electromart/pages/loginpage.dart';
 import 'package:electromart/pages/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Admin(),
+      home: Addproduct(),
     );
   }
 }

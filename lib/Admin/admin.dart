@@ -155,11 +155,6 @@ class _AdminState extends State<Admin> {
                         color: Colors.black),
                   )));
             } else {
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HomeAdmin(),
-                  ));
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   backgroundColor: const Color.fromARGB(255, 5, 218, 62),
                   content: Text(
@@ -169,6 +164,11 @@ class _AdminState extends State<Admin> {
                         fontWeight: FontWeight.bold,
                         color: Colors.black),
                   )));
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeAdmin(),
+                  ));
             }
           },
         );
