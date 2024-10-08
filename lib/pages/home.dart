@@ -198,7 +198,7 @@ class _HomeState extends State<Home> {
                             const EdgeInsets.only(right: 15, top: 4, bottom: 4),
                         child: Material(
                           borderRadius: BorderRadius.circular(20),
-                          elevation: 5,
+                          elevation: 4,
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.white,
